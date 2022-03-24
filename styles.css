@@ -65,6 +65,12 @@ input {
 }
 
 
+table {
+    width: 50%;
+}
+
+
+
 td {
     background-color: white;
     width: 100%;
