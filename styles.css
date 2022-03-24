@@ -55,3 +55,10 @@ input {
     width: 50%;
     height: 2em;
 }
+
+
+.delete {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}

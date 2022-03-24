@@ -12,7 +12,26 @@ class ToDoItem {
 
 
 
+class UI {
+    static displayList() {
+        const storedItems = [];
 
+        const items = storedItems;
+
+        items.forEach((item) => UI.addItemToList(item));
+    }
+    static addItemToList(item) {
+        const list = document.querySelector("#Todo");
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+        <td>${item.item}</td>
+        <td><a class="delete" href="#">O</a></td>
+        `;
+
+        list.appendChild(row);
+    }
+}
 
 
 
@@ -27,9 +46,9 @@ document.querySelector('#item-form').addEventListener('submit', (e) => {
         alert('You must enter an item.')
     } else {
 
-    const item = new ToDoItem();
+    const newItem = new ToDoItem(item);
 
-    UI.addItemToList(item);
+    UI.addItemToList(newItem);
 
     UI.clearFields()
     }
