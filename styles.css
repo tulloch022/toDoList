@@ -1,0 +1,57 @@
+html {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Fonts */
+
+:root {
+    --ff-primary: 'Slabo 27px', serif;
+    --ff-secondary: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+html {
+    margin: 0 auto;
+    background-color: #d7d6ff;
+    font-family: var(--ff-primary);
+}
+
+
+
+
+
+h1 {
+    font-family: var(--ff-secondary)
+}
+
+label {
+    background-color: ;
+    padding: .5em;
+}
+
+table {
+    padding-top: 2em;
+    margin: 0 auto;
+}
+
+
+.button {
+    margin-top: 1em;
+    background-color: rgb(93, 150, 255);
+    font-family: var(--ff-secondary);
+    font-size: 1em;
+}
+
+input {
+    width: 50%;
+    height: 2em;
+}
