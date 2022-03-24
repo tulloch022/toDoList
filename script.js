@@ -31,6 +31,9 @@ class UI {
 
         list.appendChild(row);
     }
+    static clearFields() {
+        document.querySelector("#item").value = '';
+    }
 }
 
 

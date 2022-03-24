@@ -30,7 +30,8 @@ html {
 
 
 h1 {
-    font-family: var(--ff-secondary)
+    font-family: var(--ff-secondary);
+    font-size: 3em;
 }
 
 label {
@@ -61,4 +62,10 @@ input {
     text-decoration: none;
     color: black;
     font-size: 2em;
+}
+
+
+td {
+    background-color: white;
+    width: 100%;
 }
