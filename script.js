@@ -11,6 +11,21 @@ class ToDoItem {
 // Handle UI Tasks
 
 
+const checkOffItem = () => {
+    const item = document.querySelector('tr');
+
+
+}
+
+// const unCheckOffItem = () => {
+//     const bubble = document.querySelector('#delete');
+
+//     bubble.innerHTML = 
+//     `<td id="delete"><a class="delete" onclick="checkOffItem()" href="#">X</a></td>
+//     `;
+// }
+
+
 
 class UI {
     static displayList() {
@@ -26,13 +41,26 @@ class UI {
 
         row.innerHTML = `
         <td>${item.item}</td>
-        <td><a class="delete" href="#">O</a></td>
+        <td id="delete"><a class="delete" onclick="checkOffItem()" href="#">X</a></td>
         `;
 
         list.appendChild(row);
     }
     static clearFields() {
         document.querySelector("#item").value = '';
+    }
+    static completeItem(el) {
+        if (el.classList.contains('delete')) {
+            el.parentElement.parentElement.remove();
+            
+            const list = document.querySelector("#Completed");
+            let row = document.createElement("tr");
+
+            row = el.parentElement.parentElement;
+
+            list.appendChild(row);
+        }
+
     }
 }
 
@@ -56,3 +84,12 @@ document.querySelector('#item-form').addEventListener('submit', (e) => {
     UI.clearFields()
     }
 });
+
+
+
+// Complete an item
+
+document.querySelector("#Todo").addEventListener('click', (e) => {
+    UI.completeItem(e.target)
+ })
+
