@@ -11,11 +11,11 @@ class ToDoItem {
 // Handle UI Tasks
 
 
-const checkOffItem = () => {
-    const item = document.querySelector('tr');
+// const checkOffItem = () => {
+//     const item = document.querySelector('tr');
 
 
-}
+// }
 
 // const unCheckOffItem = () => {
 //     const bubble = document.querySelector('#delete');
@@ -41,7 +41,7 @@ class UI {
 
         row.innerHTML = `
         <td>${item.item}</td>
-        <td id="delete"><a class="delete" onclick="checkOffItem()" href="#">X</a></td>
+        <td id="delete"><a class="delete" href="#">X</a></td>
         `;
 
         list.appendChild(row);
@@ -90,6 +90,7 @@ document.querySelector('#item-form').addEventListener('submit', (e) => {
 // Complete an item
 
 document.querySelector("#Todo").addEventListener('click', (e) => {
+    e.preventDefault();
     UI.completeItem(e.target)
  })
 
