@@ -64,7 +64,7 @@ input {
 }
 
 
-table {
+.table {
     width: 50%;
 }
 
@@ -82,4 +82,17 @@ td {
 
 h2 {
     padding-top: 3em;
+}
+
+.completedTable {
+    width: 25%;
+}
+
+.completedTable #delete {
+    display: none;
+    background-color: white;
+}
+
+thead {
+    font-size: 1.5em;
 }
