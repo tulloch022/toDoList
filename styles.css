@@ -21,11 +21,19 @@ body {
 
 html {
     margin: 0 auto;
-    background-color: #d7d6ff;
+    background-color: white;
     font-family: var(--ff-secondary);
 }
 
 
+
+.container {
+    background-color:  #d7d6ff;
+    margin: 0 auto;
+    width: 75%;
+    height: 100vh;
+    border-radius: 1em;
+}
 
 
 
