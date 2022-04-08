@@ -38,6 +38,7 @@ html {
 
 
 h1 {
+    padding-top: 1em;
     font-family: var(--ff-secondary);
     font-size: 3em;
 }
