@@ -73,7 +73,7 @@ input {
 
 .delete {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.5em;
 }
 
@@ -91,23 +91,32 @@ td {
 
 
 #delete {
-    background-color: black;
+    background-color: white;
 }
+
 
 h2 {
     padding-top: 3em;
 }
 
-.completedTable {
-    width: 25%;
-}
 
-.completedTable #delete {
-    display: none;
-    background-color: white;
-}
+
+
 
 thead {
     font-size: 1.5em;
     font-family: var(--ff-secondary)
+}
+
+button {
+    margin-top: 25vh;
+    width: 50%;
+    height: 3em;
+    font-family: var(--ff-secondary);
+    font-size: 1em;
+}
+
+
+i {
+    font-size: 1em;
 }

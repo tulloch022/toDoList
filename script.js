@@ -41,7 +41,7 @@ class UI {
 
         row.innerHTML = `
         <td>${item.item}</td>
-        <td id="delete"><a class="delete" href="#">X</a></td>
+        <td id="delete"><a class="delete" href="#">O</a></td>
         `;
 
         list.appendChild(row);
@@ -49,16 +49,23 @@ class UI {
     static clearFields() {
         document.querySelector("#item").value = '';
     }
+    // static completeItem(el) {
+    //     if (el.classList.contains('delete')) {
+    //         el.parentElement.parentElement.remove();
+            
+    //         const list = document.querySelector("#Completed");
+    //         let row = document.createElement("tr");
+
+    //         row = el.parentElement.parentElement;
+
+    //         list.appendChild(row);
+    //     }
+
+    // }
     static completeItem(el) {
         if (el.classList.contains('delete')) {
-            el.parentElement.parentElement.remove();
-            
-            const list = document.querySelector("#Completed");
-            let row = document.createElement("tr");
-
-            row = el.parentElement.parentElement;
-
-            list.appendChild(row);
+            const bubble = el;
+            bubble.innerHTML = '<i class="fa-solid fa-check"></i>';
         }
 
     }
@@ -90,7 +97,7 @@ document.querySelector('#item-form').addEventListener('submit', (e) => {
 // Complete an item
 
 document.querySelector("#Todo").addEventListener('click', (e) => {
-    e.preventDefault();
+    e.preventDefault()
     UI.completeItem(e.target)
  })
 
