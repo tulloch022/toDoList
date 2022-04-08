@@ -21,7 +21,7 @@ body {
 
 html {
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(146, 146, 190);
     font-family: var(--ff-secondary);
 }
 
@@ -33,6 +33,7 @@ html {
     width: 75%;
     height: 100vh;
     border-radius: 1em;
+    border-color: black;
 }
 
 
@@ -56,10 +57,12 @@ table {
 
 
 .button {
+    border-radius: 1em;
     margin-top: 1em;
     background-color: rgb(93, 150, 255);
     font-family: var(--ff-secondary);
     font-size: 1em;
+    font-weight: bold;
 }
 
 input {
