@@ -41,7 +41,7 @@ class UI {
 
         row.innerHTML = `
         <td>${item.item}</td>
-        <td id="delete"><a class="delete" href="#">O</a></td>
+        <td id="delete"><a class="delete" href="#">o</a></td>
         `;
 
         list.appendChild(row);
@@ -63,9 +63,17 @@ class UI {
 
     // }
     static completeItem(el) {
+        let toggle = 'undone';
         if (el.classList.contains('delete')) {
             const bubble = el;
-            bubble.innerHTML = '<i class="fa-solid fa-check"></i>';
+            if (toggle === 'undone') {
+                bubble.innerHTML = '<i class="fa-solid fa-check"></i>';
+                toggle = 'done';
+                console.log(toggle);
+                console.log(bubble.innerHTML)
+            } else {
+                bubble.innerHTML = 'o';
+            }
         }
 
     }

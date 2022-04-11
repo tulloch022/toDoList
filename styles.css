@@ -31,7 +31,7 @@ html {
     background-color:  #d7d6ff;
     margin: 0 auto;
     width: 85%;
-    height: 100vh;
+    height: 100%;
     border-radius: 1em;
     border-color: black;
 }
@@ -114,6 +114,10 @@ button {
     height: 3em;
     font-family: var(--ff-secondary);
     font-size: 1em;
+    color: black;
+    border-radius: .5em;
+    background-color: white;
+    margin-bottom: 15vh;
 }
 
 
